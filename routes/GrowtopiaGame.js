@@ -14,6 +14,10 @@ meta|${cnf.meta}
 RTENDMARKERBS1001`;
     res.send(content);
 })
+app.get('/', function (req, res) {
+    res.status(200)
+    res.end()
+})
 
 // exporting the router
 module.exports = router;
